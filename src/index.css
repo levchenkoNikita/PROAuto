@@ -59,12 +59,13 @@
 @theme {
     --font-family-base: 'Roboto', sans-serif;
     --color-red: #C53720;
-    --color-advantages-black: #0E0E0E;
+    --color-black1: #0E0E0E;
+    --color-black2: #1D1D1D;
 
     --breakpoint-sm: 480px;
     --breakpoint-md: 767px;
     --breakpoint-lg: 1024px;
-    --breakpoint-xl: 1440px;
+    --breakpoint-xl: 1200px;
     --breakpoint-2xl: 1920px;
 }
 
@@ -100,7 +101,9 @@
         overflow: hidden;
     }
 
-    .bg-home-welcome {
+    .bg-home-welcome,
+    .bg-home-about,
+    .bg-home-products {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -120,6 +123,30 @@
 
     .bg-home-welcome--4 {
         background-image: url('@assets/images/home-component/welcome-section/welcome-bg-1.png');
+    }
+
+    .bg-home-products--phara {
+        background-image: url('@assets/images/home-component/products-section/bg-phara.png');
+    }
+
+    .bg-home-about--porsche {
+        background-image: url('@assets/images/home-component/about-section/bg-porsche-center.png');
+    }
+
+    .bg-home-products--akkum {
+        background-image: url('@assets/images/catalog-component/categories/akkumulyator.png');
+    }
+
+    .bg-home-products--avtomasla {
+        background-image: url('@assets/images/catalog-component/categories/avtomaslo.png');
+    }
+
+    .bg-home-products--avtohimia {
+        background-image: url('@assets/images/catalog-component/categories/avtohimia.png');
+    }
+
+    .bg-home-products--aksess {
+        background-image: url('@assets/images/catalog-component/categories/aksessuari.png');
     }
 
     .paganation-is-active {

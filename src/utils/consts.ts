@@ -1,0 +1,9 @@
+export const BASE_ROUTE: string = '/';
+export const ABOUT_ROUTE: string = '/about';
+export const ABOUT_NEWS_ROUTE: string = '/about/news';
+export const SEARCH_ROUTE: string = '/search';
+export const CATALOG_ROUTE: string = '/catalog';
+export const CATALOG_ID_ROUTE: string = '/catalog:id';
+export const PRODUCTS_ROUTE: string = '/products';
+export const BASKET_ROUTE: string = '/basket';
+export const BASKET_OFFER_ROUTE: string = '/basket/offer';

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Advantages = () => {
     return (
-        <section className='bg-advantages-black'>
+        <section className='bg-black1'>
             <div className="container px-0">
                 <ul className="text-white overflow-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <li
@@ -22,7 +22,7 @@ const Advantages = () => {
                         before:w-27
                         before:aspect-square
                         before:rotate-45
-                        before:bg-advantages-black
+                        before:bg-black1
 
                         after:content-['']
                         after:absolute
@@ -35,7 +35,7 @@ const Advantages = () => {
                         lg:after:w-27
                         after:aspect-square
                         after:rotate-45
-                        after:bg-advantages-black
+                        after:bg-black1
                     "
                     >
                         <div className="relative z-3 h-68 flex flex-col items-center justify-center gap-y-6 px-7">
@@ -61,7 +61,7 @@ const Advantages = () => {
                         2xl:before:w-27
                         before:aspect-square
                         before:rotate-45
-                        before:bg-advantages-black
+                        before:bg-black1
 
                         after:content-['']
                         after:absolute
@@ -73,7 +73,7 @@ const Advantages = () => {
                         2xl:after:w-27
                         after:aspect-square
                         after:rotate-45
-                        after:bg-advantages-black
+                        after:bg-black1
                     "
                     >
                         <div className="relative z-3 h-68 flex flex-col items-center justify-center gap-y-6 px-7">
@@ -100,7 +100,7 @@ const Advantages = () => {
                         lg:before:w-27
                         before:aspect-square
                         before:rotate-45
-                        before:bg-advantages-black
+                        before:bg-black1
 
                         after:content-['']
                         after:absolute
@@ -113,7 +113,7 @@ const Advantages = () => {
                         lg:after:w-27
                         after:aspect-square
                         after:rotate-45
-                        after:bg-advantages-black
+                        after:bg-black1
                     "
                     >
                         <div className="relative z-3 h-68 flex flex-col items-center justify-center gap-y-6 px-7">
@@ -123,7 +123,7 @@ const Advantages = () => {
                                     Только качественная и проверенная продукция
                                 </p>
                             </div>
-                            <Link to="/contacts">
+                            <Link to="/catalog" className='duration-200 hover:opacity-80'>
                                 <ArrowIcon />
                             </Link>
                         </div>
@@ -143,7 +143,7 @@ const Advantages = () => {
                         lg:before:w-0
                         before:aspect-square
                         before:rotate-45
-                        before:bg-advantages-black
+                        before:bg-black1
 
                         after:content-['']
                         after:absolute
@@ -156,7 +156,7 @@ const Advantages = () => {
                         lg:after:w-0
                         after:aspect-square
                         after:rotate-45
-                        after:bg-advantages-black
+                        after:bg-black1
                     "
                     >
                         <div className="relative z-3 h-68 flex flex-col items-center justify-center gap-y-6 px-7">
@@ -166,7 +166,7 @@ const Advantages = () => {
                                     Мы всегда на связи с 9:00 до 18:00!
                                 </p>
                             </div>
-                            <Link to="/contacts">
+                            <Link to="/catalog" className='duration-200 hover:opacity-80'>
                                 <ArrowIcon />
                             </Link>
                         </div>
