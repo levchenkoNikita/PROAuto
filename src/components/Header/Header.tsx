@@ -57,31 +57,37 @@ const Header = () => {
                                             {element.title}
                                         </div>
                                     </Link>
-                                    <ul
-                                        className={`
-                                            absolute top-full left-0 w-57 duration-200 overflow-hidden 
-                                            ${hoverOption === element.id ? 'h-41 z-2' : 'h-0 z-1'}
-                                            flex flex-col items-start bg-transparent 
-                                        `}
-                                    >
-                                        {
-                                            element.subtitles.map(subtitle => (
-                                                <li key={subtitle.id} className="relative z-2 w-full h-10.25 p-2 border-b border-black2 text-[1rem] font-medium uppercase leading-normal tracking-normal header-link--option">
-                                                    <Link to={element.path} className="flex items-center justify-between gap-x-3 hover:opacity-70">
-                                                        <div className="text-[0.75rem] font-normal leading-normal tracking-normal">
-                                                            {subtitle.name}
-                                                        </div>
-                                                        <div className="header-arrow">
-                                                            <ArrowRightIcon />
-                                                        </div>
-                                                    </Link>
-                                                </li>
-                                            ))
-                                        }
-                                        <div className="absolute z-1 top-0 left-0 w-full h-full bg-black opacity-90">
+                                    {
+                                        element.subtitles 
+                                        ?
+                                        <ul
+                                            className={`
+                                                absolute top-full left-0 w-57 duration-200 overflow-hidden 
+                                                ${hoverOption === element.id ? 'h-41 z-2' : 'h-0 z-1'}
+                                                flex flex-col items-start bg-transparent 
+                                            `}
+                                        >
+                                            {
+                                                element.subtitles.map(subtitle => (
+                                                    <li key={subtitle.id} className="relative z-2 w-full h-10.25 border-b border-black2 text-[1rem] font-medium uppercase leading-normal tracking-normal header-link--option">
+                                                        <Link to={element.path} className="h-full flex items-center justify-between gap-x-3 p-2 hover:opacity-70">
+                                                            <div className="text-[0.75rem] font-normal leading-normal tracking-normal">
+                                                                {subtitle.name}
+                                                            </div>
+                                                            <div className="header-arrow">
+                                                                <ArrowRightIcon />
+                                                            </div>
+                                                        </Link>
+                                                    </li>
+                                                ))
+                                            }
+                                            <div className="absolute z-1 top-0 left-0 w-full h-full bg-black opacity-90">
 
-                                        </div>
-                                    </ul>
+                                            </div>
+                                        </ul> 
+                                        :
+                                        ''
+                                    }
                                 </li>
                             ))
                         }

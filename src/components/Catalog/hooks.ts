@@ -3,7 +3,7 @@ import { useAppSelector } from "@/store/hooks";
 import { useState } from "react";
 
 export const useCatalogLogic = () => {
-    const categories = useAppSelector(getCategories());
+    const categories = useAppSelector(getCategories);
 
     const [currentCard, setCurrentCard] = useState<number>(1);
 

@@ -1,9 +1,15 @@
 import CatalogProducts from "@/components/Catalog/Catalog";
-import { information } from "./datasets";
+import { catalogInformation, welcomeInformation } from "./datasets";
+import Welcome from "@/components/Welcome/Welcome";
+import BreadCrumbs from "@/components/BreadCrumbs/BreadCrumbs";
 
 const Catalog = () => {
     return (
-        <CatalogProducts information={information}/>
+        <>
+            <Welcome information={welcomeInformation}/>
+            <BreadCrumbs />
+            <CatalogProducts information={catalogInformation}/>
+        </>
     );
 };
 

@@ -7,7 +7,7 @@ export interface NavigateOption {
     id: number;
     path: string;
     title: string;
-    subtitles: Subtitle[];
+    subtitles: Subtitle[] | null;
 }
 
 export type MenuNavigation = NavigateOption[];

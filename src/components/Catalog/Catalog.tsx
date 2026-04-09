@@ -43,7 +43,7 @@ const Catalog = ({ information }: ComponentProps) => {
                                     w-full text-white
                                 `}
                             >
-                                <div className={`relative max-w-90 h-70 md:h-100 w-full bg-home-products ${element.image}`} onClick={(event) => handleClick(event, element.id)}>
+                                <div className={`relative max-w-90 h-70 md:h-100 w-full bg-home-products cursor-pointer ${element.image}`} onClick={(event) => handleClick(event, element.id)}>
                                     <div
                                         className={`
                                             wfull h-full flex flex-col items-center justify-start relative z-2 duration-200

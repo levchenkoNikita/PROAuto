@@ -3,7 +3,7 @@ import type { ListLinks } from "./types";
 import { getCategories } from "@/store/categories";
 
 export const useFooterDatasets = () => {
-    const categories = useAppSelector(getCategories());
+    const categories = useAppSelector(getCategories);
 
     const listLinks: ListLinks = [
         {
